@@ -45,6 +45,7 @@ body{
     position: relative;
     transform:scale(0.9);
     animation: 1s;
+    overflow-x: hidden;
 }
 
 .image:nth-child(2n){

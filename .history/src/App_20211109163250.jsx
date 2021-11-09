@@ -10,7 +10,7 @@ function App() {
   return (
     <div>
       <div className="title">interesting findings</div>
-      <div className="footer">This is the place for most interesting art found in Web.</div>
+      <div className="title">This is the place for most interesting art found in Internet.</div>
       <div className="image-container">
       {data.map((image, index) => {
         return (
