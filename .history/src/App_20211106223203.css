@@ -1,0 +1,8 @@
+.image-container{
+    justify-content: space-evenly;
+}
+
+.image{
+    width: 30%;
+    object-fit: cover;
+}

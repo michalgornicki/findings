@@ -1,0 +1,36 @@
+body{
+    background-color: black;
+}
+
+.image-container{
+    display: flex;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+}
+
+.image{
+    height: 500px;
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+    transform:scale(0.75);
+    transition: 1s;
+    border-radius: 2vmin;
+}
+
+.image:hover{
+    transition: 1s;
+    transform:scale(1);
+}
+
+.image-wrap{
+    width: 25%;
+    overflow: hidden;
+    transition: 1s;
+}
+
+.image-wrap:hover{
+    transition: 1s;
+}
+
+

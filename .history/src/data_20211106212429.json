@@ -1,0 +1,14 @@
+[
+    {
+      "id": 1,
+       "images": "../art/art(1).jpg",
+    },
+    {
+      "id": 2,
+       "images": "../../assets/images/sample2.jpg",
+    },
+    {
+        "id": 3,
+         "images": "../../assets/images/sample1.jpg",
+      },
+  ]

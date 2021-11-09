@@ -1,0 +1,22 @@
+body{
+    background-color: black;
+}
+
+.image-container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.image{
+    width: 33.333%;
+    height: 350px;
+    object-fit: cover;
+    position: relative;
+}
+
+.image:focus{
+    width: 33.333%;
+    height: 350px;
+    object-fit: cover;
+}

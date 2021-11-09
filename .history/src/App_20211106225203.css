@@ -1,0 +1,26 @@
+body{
+    background-color: black;
+}
+
+.image-container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.image{
+    width: 33.333%;
+    height: 350px;
+    object-fit: cover;
+    position: relative;
+    left: 00%;
+}
+
+.image:hover{
+    width: 33.333%;
+    height: 350px;
+    object-fit: cover;
+    position: absolute;
+    left: 50%;
+    animation: 1s;
+}

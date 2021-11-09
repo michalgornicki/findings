@@ -1,0 +1,21 @@
+body{
+    background-color: black;
+}
+
+.image-container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: npwrap;
+}
+
+.image{
+    flex-basis: 5%;
+    height: 450px;
+    object-fit: cover;
+    position: relative;
+}
+
+.image:hover{
+    margin: 2vmin;
+    transition: 1s;
+}

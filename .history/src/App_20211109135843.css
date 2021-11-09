@@ -1,0 +1,33 @@
+body{
+    background-color: black;
+}
+
+.image-container{
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+}
+
+.image{
+    height: 500px;
+    position: relative;
+    transform: rotate(-15deg);
+}
+
+.image:hover{
+    transition: 1s;
+    transform: rotate(0deg);
+}
+
+.image-wrap{
+    transform: rotate(15deg);
+    overflow: hidden;
+    width: 25%;
+}
+
+.image-wrap:hover{
+    transition: 1s;
+    transform: rotate(0deg);
+}
+
+

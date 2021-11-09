@@ -1,0 +1,9 @@
+.image-container{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.image{
+    width: 30%;
+    object-fit: cover;
+}

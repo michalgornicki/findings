@@ -1,0 +1,23 @@
+body{
+    background-color: black;
+}
+
+.image-container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.image{
+    width: 10%;
+    height: 450px;
+    object-fit: cover;
+    position: relative;
+}
+
+.image:hover{
+    width: 30%;
+    transition: 1s;
+    transform-origin: left;
+    z-index: 3;
+}

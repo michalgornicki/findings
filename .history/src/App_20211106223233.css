@@ -1,0 +1,11 @@
+.image-container{
+    display: flex;
+    justify-content: space-evenly;
+    height: 800px;
+}
+
+.image{
+    width: 30%;
+    height: 30%;
+    object-fit: cover;
+}

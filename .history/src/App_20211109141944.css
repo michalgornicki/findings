@@ -1,0 +1,44 @@
+body{
+    background-color: black;
+}
+
+.image-container{
+    display: flex;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+}
+
+.image{
+    height: 500px;
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+    transform:scale(0.75);
+    transition: 1s;
+}
+
+.image:hover{
+    transition: 0.3s;
+    transform:scale(1);
+}
+
+.image-wrap{
+    width: 25%;
+    overflow: hidden;
+    transition: 1s;
+}
+
+.image-wrap:hover{
+    transition: 1s;
+}
+
+
+.image-zoom{
+    top: 10%;
+    position: fixed;
+    display: block;
+    width: 80%;
+    height: 80%;
+    left: 10%;
+    object-fit: cover;
+}

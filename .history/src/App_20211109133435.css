@@ -1,0 +1,20 @@
+body{
+    background-color: black;
+}
+
+.image-container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.image{
+    width: 50%;
+    height: 450px;
+    object-fit: cover;
+    position: relative;
+}
+
+.image:hover{
+    transition: 1s;
+}
