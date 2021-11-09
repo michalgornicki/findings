@@ -37,48 +37,28 @@ body{
     animation: 1s;
 }
 
-.image:nth-child(2n){
-    transform: rotate(-5deg);
-    transition: 1s;
+.image:nth-child(3n-1){
+    filter:blur(0px);
 }
 
-.image:nth-child(2n):hover{
-    transform: rotate(0deg);
-    transition: 1s;
-}
-
-.image:nth-child(4n){
-    transform: scale(1.1);
+.image:nth-child(3n-2){
+    transform: scale(0.8);
     transition: 1s;
     filter:blur(3px);
 }
 
-.image:nth-child(4n):hover{
+.image:nth-child(3n-2):hover{
     filter:blur(0px);
     transform: scale(0.9);
     transition: 1s;
 }
 
-.image:nth-child(6n){
-    transform: scale(1.3) rotate(15deg);
-    transition: 1s;
-    filter:blur(8px);
-}
-
-.image:nth-child(6n):hover{
-    filter:blur(0px);
-    transform: scale(0.9);
+.image:nth-child(3n){
+    transform: scale(1);
     transition: 1s;
 }
 
-
-.image:nth-child(7n-6){
-    transform: scale(1.2);
-    transition: 1s;
-    filter:blur(5px);
-}
-
-.image:nth-child(7n-6):hover{
+.image:nth-child(3n):hover{
     transform: scale(0.9);
     filter:blur(0px);
     transition: 1s;

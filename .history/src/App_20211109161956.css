@@ -33,18 +33,20 @@ body{
     margin: 0.5%;
     object-fit: cover;
     position: relative;
+    transform:scale(1);
+    animation: 1s;
+    filter:blur(1px);
+}
+
+.image:hover{
+    height: 400px;
+    width: 32%;
+    margin: 0.5%;
+    object-fit: cover;
+    position: relative;
     transform:scale(0.9);
     animation: 1s;
-}
-
-.image:nth-child(2n){
-    transform: rotate(-5deg);
-    transition: 1s;
-}
-
-.image:nth-child(2n):hover{
-    transform: rotate(0deg);
-    transition: 1s;
+    filter:blur(0px);
 }
 
 .image:nth-child(4n){
@@ -60,7 +62,7 @@ body{
 }
 
 .image:nth-child(6n){
-    transform: scale(1.3) rotate(15deg);
+    transform: scale(1.4);
     transition: 1s;
     filter:blur(8px);
 }

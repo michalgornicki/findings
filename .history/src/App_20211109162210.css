@@ -39,12 +39,6 @@ body{
 
 .image:nth-child(2n){
     transform: rotate(-5deg);
-    transition: 1s;
-}
-
-.image:nth-child(2n):hover{
-    transform: rotate(0deg);
-    transition: 1s;
 }
 
 .image:nth-child(4n){
@@ -60,7 +54,7 @@ body{
 }
 
 .image:nth-child(6n){
-    transform: scale(1.3) rotate(15deg);
+    transform: scale(1.4) rotate(15deg);
     transition: 1s;
     filter:blur(8px);
 }
