@@ -1,0 +1,202 @@
+body{
+    background-color: black;
+    margin-bottom: 10vmin;
+    animation: 5s body;
+    overflow-X: hidden;
+    width: 98%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@keyframes body{
+    0%{filter:brightness(0);}
+    100%{filter: brightness(1);}
+}
+
+.title{
+    text-align: center;
+    color: rgb(159, 159, 159);
+    font-size: 6vmin;
+    margin: 5vmin;
+    margin-bottom: 10vmin;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.footer{
+    text-align: center;
+    color: rgb(159, 159, 159);
+    font-size: 3vmin;
+    margin: 5vmin;
+    margin-bottom: 15vmin;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.image-container{
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+}
+
+.image{
+    height: 350px;
+    width: 32%;
+    margin: 0.5%;
+    object-fit: cover;
+    position: relative;
+    transform:scale(0.9);
+    animation: 1s;
+}
+
+.image:nth-child(2n){
+    transform: rotate(-5deg);
+    transition: 1s;
+}
+
+.image:nth-child(2n):hover{
+    transform: rotate(0deg);
+    transition: 1s;
+}
+
+.image:nth-child(4n){
+    transform: scale(1.1);
+    transition: 1s;
+    filter:blur(3px);
+}
+
+.image:nth-child(4n):hover{
+    filter:blur(0px);
+    transform: scale(0.9);
+    transition: 1s;
+}
+
+.image:nth-child(6n){
+    transform: scale(1.3) rotate(15deg);
+    transition: 1s;
+    filter:blur(8px);
+}
+
+.image:nth-child(6n):hover{
+    filter:blur(0px);
+    transform: scale(0.9);
+    transition: 1s;
+}
+
+
+.image:nth-child(7n-6){
+    transform: scale(1.2);
+    transition: 1s;
+    filter:blur(5px);
+}
+
+.image:nth-child(7n-6):hover{
+    transform: scale(0.9);
+    filter:blur(0px);
+    transition: 1s;
+}
+
+
+
+.image-zoom{
+    top: 5%;
+    position: fixed;
+    display: block;
+    height: 600px;
+    left: 50%;
+    transform: translateX(-50%);
+    object-fit: contain;
+    animation: 1s image-zoom;
+}
+
+@keyframes image-zoom{
+    0%{filter: opacity(0);}
+    100%{filter: opacity(1);}
+}
+
+.image-zoom-thumbnail{
+    position: relative;
+    display: block;
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    animation: 1s image-zoom-thumbnail;
+    margin: 0.5vmin;
+    filter: opacity(0.6);
+    transition: 1s;
+}
+
+@keyframes image-zoom-thumbnail{
+    0%{filter: opacity(0);}
+    100%{filter: opacity(0.6);}
+}
+
+.image-zoom-thumbnail:hover{
+    filter: opacity(1);
+    transition: 1s;
+}
+
+.thumbnail-container{
+    position: fixed;
+    display: flex;
+    bottom: 1%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.image-zoom-background{
+    top: 0%;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    animation: zoom-background 1s forwards;
+    animation-delay: 0.25s;
+}
+
+@keyframes zoom-background{
+    0%{background-color: rgba(0, 0, 0, 0);}
+    100%{background-color: rgba(0, 0, 0, 0.7);}
+}
+
+@media only screen and (max-width: 800px) {
+
+    .image{
+        height: 400px;
+        width: 100%;
+        margin: 0%;
+        object-fit: cover;
+        position: relative;
+        transform:scale(0.9);
+        animation: 1s;
+    }
+
+    .image-zoom{
+        top: 0%;
+        position: fixed;
+        display: block;
+        height: 800px;
+        left: 0%;
+        transform: translateX(0%);
+        object-fit: cover;
+        animation: 1s image-zoom;
+        width: 80%;
+        left: 10%;
+    }
+
+    .thumbnail-container{
+        position: fixed;
+        display: flex;
+        bottom: 1%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80%;
+    }
+
+
+    .image:nth-child(n){
+        transform: rotate(0deg) scale(1);
+        transition: 1s;
+        filter: blur(0px);
+    }
+
+    
+}

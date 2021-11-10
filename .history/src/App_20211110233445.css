@@ -109,7 +109,6 @@ body {
   transform: translateX(-50%);
   object-fit: contain;
   animation: 1s image-zoom;
-  box-shadow: 0px 0px 40px black;
 }
 
 @keyframes image-zoom {
@@ -133,6 +132,9 @@ body {
   transition: 1s;
 }
 
+.current-thumbnail{
+    box-shadow: 0px 0px 5px white;
+}
 
 @keyframes image-zoom-thumbnail {
   0% {

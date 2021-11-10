@@ -25,11 +25,12 @@ function App() {
       </div>
 
       <div className="thumbnail-container">
-      {image > 1 ? <img className="image-zoom-thumbnail" onClick={() => setImage(image - 2)} src={data[image - 2].src} alt=""/> : ""}
-      {image > 0 ? <img className="image-zoom-thumbnail" onClick={() => setImage(image - 1)} src={data[image - 1].src} alt=""/> : ""}
+      <img className="image-zoom-thumbnail" onClick={() => setImage(image - 2)} src={data[image - 2].src} alt=""/>
+      <img className="image-zoom-thumbnail" onClick={() => setImage(image - 1)} src={data[image - 1].src} alt=""/>
       <img className="image-zoom-thumbnail" onClick={() => setImage(image)} src={data[image].src} alt=""/>
-      {image < 41 ? <img className="image-zoom-thumbnail" onClick={() => setImage(image + 1)} src={data[image + 1].src} alt=""/> : ""}
-      {image < 40 ? <img className="image-zoom-thumbnail" onClick={() => setImage(image + 2)} src={data[image + 2].src} alt=""/> : ""}
+      <img className="image-zoom-thumbnail" onClick={() => setImage(image + 1)} src={data[image + 1].src} alt=""/>
+      <img className="image-zoom-thumbnail" onClick={() => setImage(image + 2)} src={data[image + 2].src} alt=""/>
+      <img className="image-zoom-thumbnail" onClick={() => setImage(image + 3)} src={data[image + 3].src} alt=""/>
       </div>
       </div>
     : ""}
