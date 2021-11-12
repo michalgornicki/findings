@@ -1,7 +1,6 @@
 import React from 'react';
 import './App.css';
 import data from "./data";
-import Reveal from 'react-reveal/Reveal';
 
 function App() {
 
@@ -15,9 +14,7 @@ function App() {
       <div className="image-container">
       {data.map((image, index) => {
         return (
-          <Reveal effect="imageLoading" fraction= "0.85">
           <img className="image" src={image.src} key={index} onClick={()=> {setImage(index); setZoom(1)}} alt="" />
-          </Reveal>
       )}
       )}
       </div>
@@ -31,7 +28,7 @@ function App() {
       {image > 1 ? <img className="image-zoom-thumbnail" onClick={() => setImage(image - 2)} src={data[image - 2].src} alt=""/> : ""}
       {image > 0 ? <img className="image-zoom-thumbnail" onClick={() => setImage(image - 1)} src={data[image - 1].src} alt=""/> : ""}
       <img className="image-zoom-thumbnail" onClick={() => setImage(image)} src={data[image].src} alt=""/>
-      {image < 40 ? <img className="image-zoom-thumbnail" onClick={() => setImage(image + 1)} src={data[image + 1].src} alt=""/> : ""}
+      {image < 40 ? <img className="image-zoom-thumbnail" onClick={() => {() => {document.getElementsByClassName[2].style.opacity="0.2"}; setTimeout((() => setImage(image + 1)), 200)}} src={data[image + 1].src} alt=""/> : ""}
       {image < 39 ? <img className="image-zoom-thumbnail" onClick={() => setImage(image + 2)} src={data[image + 2].src} alt=""/> : ""}
       </div>
       </div>

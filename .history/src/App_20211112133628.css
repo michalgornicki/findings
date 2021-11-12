@@ -45,12 +45,12 @@ body {
 
 .image {
   height: 350px;
-  width: 33%;
-  margin: 0.1655%;
+  width: 32%;
+  margin: 0.5%;
   object-fit: cover;
   position: relative;
   filter: blur(25px);
-  animation: 2s;
+  animation: 1s;
 }
 
 .image:nth-child(2n){
@@ -159,7 +159,6 @@ body {
     height: 400px;
     width: 100%;
     margin: 0%;
-    margin-bottom: 25vmin;
     object-fit: cover;
     position: relative;
     transform: scale(0.9);
@@ -167,11 +166,11 @@ body {
   }
 
   .image:nth-child(2n){
-    transform: scale(1) rotate(0deg);
+    transform: scale(1) rotate(-30deg);
   }
   
   .image:nth-child(2n-1){
-    transform: scale(1) rotate(0deg);
+    transform: scale(1) rotate(30deg);
   }
   
   .imageLoading:nth-child(2n){

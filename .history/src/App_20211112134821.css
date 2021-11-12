@@ -46,7 +46,7 @@ body {
 .image {
   height: 350px;
   width: 33%;
-  margin: 0.1655%;
+  margin: 0.333%;
   object-fit: cover;
   position: relative;
   filter: blur(25px);

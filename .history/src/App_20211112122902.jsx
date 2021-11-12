@@ -1,12 +1,15 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './App.css';
 import data from "./data";
-import Reveal from 'react-reveal/Reveal';
 
 function App() {
 
   const [image, setImage] = React.useState([0]);
   const [zoom, setZoom] = React.useState([0]);
+
+  useEffect(() => {
+    document.getElementsByClassName("image-zoom")[0].style.opacity="0.2";
+  });
 
   return (
     <div>
@@ -15,9 +18,7 @@ function App() {
       <div className="image-container">
       {data.map((image, index) => {
         return (
-          <Reveal effect="imageLoading" fraction= "0.85">
           <img className="image" src={image.src} key={index} onClick={()=> {setImage(index); setZoom(1)}} alt="" />
-          </Reveal>
       )}
       )}
       </div>

@@ -45,8 +45,8 @@ body {
 
 .image {
   height: 350px;
-  width: 33%;
-  margin: 0.1655%;
+  width: 32%;
+  margin: 0.5%;
   object-fit: cover;
   position: relative;
   filter: blur(25px);
@@ -66,6 +66,8 @@ body {
   filter:blur(0px);
   transition: 1s;
   transition-delay: 0s;
+  margin: 0%;
+  width: 33.333%;
 }
 
 .imageLoading:nth-child(2n-1){
@@ -73,6 +75,9 @@ body {
   filter:blur(0px);
   transition: 1s;
   transition-delay: 0.3s;
+  margin: 0%;
+  width: 33.333%;
+
 }
 
 .image-zoom {

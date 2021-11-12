@@ -45,34 +45,25 @@ body {
 
 .image {
   height: 350px;
-  width: 33%;
-  margin: 0.1655%;
+  width: 32%;
+  margin: 0.5%;
   object-fit: cover;
   position: relative;
-  filter: blur(25px);
-  animation: 2s;
-}
-
-.image:nth-child(2n){
-  transform: scale(1.5) rotate(-30deg);
-}
-
-.image:nth-child(2n-1){
-  transform: scale(1.5) rotate(30deg);
+  transform: scale(0.9) rotate(5deg);
+  filter: blur(3px);
+  animation: 1s;
 }
 
 .imageLoading:nth-child(2n){
-  transform: scale(1) rotate(0deg);
+  transform: scale(1) rotate(5deg);
   filter:blur(0px);
   transition: 1s;
-  transition-delay: 0s;
 }
 
 .imageLoading:nth-child(2n-1){
-  transform: scale(1) rotate(0deg);
+  transform: scale(1) rotate(-5deg);
   filter:blur(0px);
   transition: 1s;
-  transition-delay: 0.3s;
 }
 
 .image-zoom {
@@ -159,33 +150,10 @@ body {
     height: 400px;
     width: 100%;
     margin: 0%;
-    margin-bottom: 25vmin;
     object-fit: cover;
     position: relative;
     transform: scale(0.9);
     animation: 1s;
-  }
-
-  .image:nth-child(2n){
-    transform: scale(1) rotate(0deg);
-  }
-  
-  .image:nth-child(2n-1){
-    transform: scale(1) rotate(0deg);
-  }
-  
-  .imageLoading:nth-child(2n){
-    transform: scale(1) rotate(0deg);
-    filter:blur(0px);
-    transition: 1s;
-    transition-delay: 0s;
-  }
-  
-  .imageLoading:nth-child(2n-1){
-    transform: scale(1) rotate(0deg);
-    filter:blur(0px);
-    transition: 1s;
-    transition-delay: 0s;
   }
 
   .image-zoom {
@@ -193,11 +161,12 @@ body {
     position: fixed;
     display: block;
     height: 600px;
+    left: 0%;
+    transform: translateX(0%);
     object-fit: cover;
     animation: 1s image-zoom;
     width: 90%;
     left: 5%;
-    transform: translateX(0%);
   }
 
   .thumbnail-container {
@@ -221,4 +190,9 @@ body {
     transition: 1s;
   }
 
+  .image:nth-child(n) {
+    transform: rotate(0deg) scale(1);
+    transition: 1s;
+    filter: blur(0px);
+  }
 }

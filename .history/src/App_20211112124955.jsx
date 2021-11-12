@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import data from "./data";
-import Reveal from 'react-reveal/Reveal';
+import LazyLoad from 'react-lazyload';
 
 function App() {
 
@@ -15,9 +15,9 @@ function App() {
       <div className="image-container">
       {data.map((image, index) => {
         return (
-          <Reveal effect="imageLoading" fraction= "0.85">
+          <LazyLoad height={-600}>
           <img className="image" src={image.src} key={index} onClick={()=> {setImage(index); setZoom(1)}} alt="" />
-          </Reveal>
+          </LazyLoad>
       )}
       )}
       </div>

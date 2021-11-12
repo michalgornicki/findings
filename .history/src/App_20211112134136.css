@@ -45,12 +45,12 @@ body {
 
 .image {
   height: 350px;
-  width: 33%;
-  margin: 0.1655%;
+  width: 32%;
+  margin: 0.5%;
   object-fit: cover;
   position: relative;
   filter: blur(25px);
-  animation: 2s;
+  animation: 1s;
 }
 
 .image:nth-child(2n){
