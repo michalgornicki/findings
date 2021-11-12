@@ -203,18 +203,17 @@ body {
   .thumbnail-container {
     position: fixed;
     display: flex;
-    top: 78%;
+    bottom: 7%;
     left: 2.5%;
     transform: translateX(0%);
     width: 95%;
-    height: 12%;
   }
 
   .image-zoom-thumbnail {
     position: relative;
     display: block;
+    height: 100px;
     width: 19%;
-    height: 100%;
     object-fit: cover;
     animation: 1s image-zoom-thumbnail;
     margin: 0.5%;

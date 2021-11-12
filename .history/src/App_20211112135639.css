@@ -207,14 +207,13 @@ body {
     left: 2.5%;
     transform: translateX(0%);
     width: 95%;
-    height: 12%;
+    height: 15%;
   }
 
   .image-zoom-thumbnail {
     position: relative;
     display: block;
     width: 19%;
-    height: 100%;
     object-fit: cover;
     animation: 1s image-zoom-thumbnail;
     margin: 0.5%;
