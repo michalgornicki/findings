@@ -132,7 +132,7 @@ body {
 
 .image-zoom-thumbnail:hover {
   filter: opacity(1);
-  transition: 0.3s;
+  transition: 1s;
   outline: 1px solid white;
 }
 

@@ -53,8 +53,14 @@ body {
   animation: 2s;
 }
 
-.image:nth-child(2n):hover, .image:nth-child(2n-1):hover{
+.image:nth-child(2n):hover{
   outline: 1px solid white;
+  transition-delay: 0;
+  transition: 0.3s;
+}
+
+.image:nth-child(2n-1):hover{
+  outline: 1px solid rgb(255, 0, 0);
   transition-delay: 0;
   transition: 0.3s;
 }
@@ -93,12 +99,6 @@ body {
   box-shadow: 0px 0px 40px black;
 }
 
-.image-zoom:hover{
-  outline: 1px solid red;
-  transition-delay: 0;
-  transition: 0.3s;
-}
-
 @keyframes image-zoom {
   0% {
     filter: opacity(0);
@@ -132,8 +132,7 @@ body {
 
 .image-zoom-thumbnail:hover {
   filter: opacity(1);
-  transition: 0.3s;
-  outline: 1px solid white;
+  transition: 1s;
 }
 
 .thumbnail-container {
@@ -233,10 +232,6 @@ body {
     margin: 0.5%;
     filter: opacity(1);
     transition: 1s;
-  }
-
-  .image:nth-child(2n):hover, .image:nth-child(2n-1):hover{
-    outline: 0;
   }
 
 }
