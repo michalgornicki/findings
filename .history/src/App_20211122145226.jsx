@@ -13,7 +13,7 @@ function App() {
     <div>
       <div className="title">interesting findings</div>
       <div>
-      <div className="footer">Here you can find collection most interesting art found in Web.</div>
+      <div className="footer">Here you can find collection of interesting art found in Web.</div>
       <img className="wallpaper" src={wallpaper} alt="" />
       </div>
 

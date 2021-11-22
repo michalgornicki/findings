@@ -12,10 +12,8 @@ function App() {
   return (
     <div>
       <div className="title">interesting findings</div>
-      <div>
-      <div className="footer">Here you can find collection most interesting art found in Web.</div>
+      <div className="footer">This is the place for most interesting art found in Web.</div>
       <img className="wallpaper" src={wallpaper} alt="" />
-      </div>
 
       <div className="image-container">
       {data.map((image, index) => {
