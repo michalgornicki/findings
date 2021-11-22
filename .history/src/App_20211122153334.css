@@ -5,10 +5,18 @@ html{
 body {
   background-color: black;
   margin-bottom: 10vmin;
-  overflow-x: hidden;
   width: 98%;
   margin-left: auto;
   margin-right: auto;
+}
+
+@keyframes body {
+  0% {
+    filter: brightness(0.2);
+  }
+  100% {
+    filter: brightness(1);
+  }
 }
 
 .title {
@@ -40,6 +48,7 @@ body {
   height: 100vh;
   margin-bottom: 15vmin;
   object-fit: cover;
+  animation: 5s body;
 }
 
 .scroll{
