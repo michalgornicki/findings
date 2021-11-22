@@ -296,13 +296,4 @@ body {
     outline: 0;
   }
 
-  .scroll{
-    display: block;
-    position: relative;
-    width: 15vmin;
-    margin: auto;
-    top: -20vh;
-    filter: opacity(1);
-  }
-
 }

@@ -3,7 +3,6 @@ import './App.css';
 import data from "./data";
 import Reveal from 'react-reveal/Reveal';
 import wallpaper from "./wallpaper.jpg";
-import scroll from "./scroll.png";
 
 function App() {
 
